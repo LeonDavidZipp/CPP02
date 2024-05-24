@@ -31,23 +31,27 @@ int main( void ) {
     std::cout << "a / b " << (a / b) << std::endl;
 
     std::cout << "a before a++ " << a << std::endl;
-    std::cout << "a++ " << a++ << std::endl;
+    a++;
     std::cout << "a after a++ " << a << std::endl;
 
     std::cout << "a before ++a " << a << std::endl;
-    std::cout << "++a " << ++a << std::endl;
+    ++a;
     std::cout << "a after ++a " << a << std::endl;
 
     std::cout << "a before a-- " << a << std::endl;
-    std::cout << "a-- " << a-- << std::endl;
+    a--;
     std::cout << "a after a-- " << a << std::endl;
 
     std::cout << "a before --a " << a << std::endl;
-    std::cout << "--a " << --a << std::endl;
+    --a;
     std::cout << "a after --a " << a << std::endl;
 
     std::cout << "min(a, b) " << Fixed::min(a, b) << std::endl;
     std::cout << "max(a, b) " << Fixed::max(a, b) << std::endl;
+
+    int r = 42;
+    int s = 42;
+    std::cout << "r == s " << (r == s) << std::endl;
 
     return 0;
 }

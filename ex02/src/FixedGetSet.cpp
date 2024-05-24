@@ -3,7 +3,7 @@
 const int Fixed::fractBits = 8;
 
 int Fixed::getRawBits() const {
-    return val;
+    return (int)val;
 }
 
 void Fixed::setRawBits(int const raw) {
