@@ -12,7 +12,7 @@ class Fixed
         Fixed( const float val);
         Fixed( const Fixed& fixed);
         Fixed& operator=(const Fixed& otherFixed);
-        friend std::ostream& operator<<(std::ostream& os, const Fixed& fixed);
+        // friend std::ostream& operator<<(std::ostream& os, const Fixed& fixed);
         ~Fixed( void );
 
         int getRawBits( void ) const;
@@ -25,5 +25,7 @@ class Fixed
         int val;
         static const int fractBits;
 };
+
+std::ostream& operator<<(std::ostream &os, const Fixed& fixed);
 
 #endif
