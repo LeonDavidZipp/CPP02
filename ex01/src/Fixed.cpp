@@ -17,11 +17,11 @@ Fixed::Fixed( const float val) {
     this->val = (int)roundf(val * (1 << fractBits));
 }
 
-Fixed& Fixed::operator=(const Fixed& otherFixed) {
+Fixed& Fixed::operator=(const Fixed& other) {
     std::cout << "Copy assignment operator called" << std::endl;
 
-    if (this != &otherFixed) {
-        val = otherFixed.getRawBits();
+    if (this != &other) {
+        val = other.getRawBits();
     }
 
     return *this;

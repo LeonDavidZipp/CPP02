@@ -19,14 +19,14 @@ class Fixed
         int toInt(void) const;
         float toFloat(void) const;
 
-        Fixed& operator=(const Fixed& otherFixed);
+        Fixed& operator=(const Fixed& other);
 
-        bool operator>(const Fixed& otherFixed);
-        bool operator<(const Fixed& otherFixed);
-        bool operator>=(const Fixed& otherFixed);
-        bool operator<=(const Fixed& otherFixed);
-        bool operator==(const Fixed& otherFixed);
-        bool operator!=(const Fixed& otherFixed);
+        bool operator>(const Fixed& other);
+        bool operator<(const Fixed& other);
+        bool operator>=(const Fixed& other);
+        bool operator<=(const Fixed& other);
+        bool operator==(const Fixed& other);
+        bool operator!=(const Fixed& other);
 
         Fixed	operator+(const Fixed& other) const;
         Fixed	operator-(const Fixed& other) const;

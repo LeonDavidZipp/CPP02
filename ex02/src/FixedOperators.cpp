@@ -5,19 +5,58 @@ std::ostream& operator<<(std::ostream &os, const Fixed& fixed) {
     return os;
 }
 
-bool operator>(const Fixed& otherFixed);
-bool operator<(const Fixed& otherFixed);
-bool operator>=(const Fixed& otherFixed);
-bool operator<=(const Fixed& otherFixed);
-bool operator==(const Fixed& otherFixed);
-bool operator!=(const Fixed& otherFixed);
+bool Fixed::operator>(const Fixed& other) {
+    return this->getRawBits() > other.getRawBits();
+}
 
-Fixed	operator+(const Fixed& other) const;
-Fixed	operator-(const Fixed& other) const;
-Fixed	operator*(const Fixed& other) const;
-Fixed	operator/(const Fixed& other) const;
+bool Fixed::operator<(const Fixed& other) {
+    return this->getRawBits() > other.getRawBits();
+}
 
-Fixed&	operator++(void);
-Fixed	operator++(int);
-Fixed&	operator--(void);
-Fixed	operator--(int);
+bool Fixed::operator>=(const Fixed& other) {
+    return this->getRawBits() > other.getRawBits();
+}
+
+bool Fixed::operator<=(const Fixed& other) {
+    return this->getRawBits() > other.getRawBits();
+}
+
+bool Fixed::operator==(const Fixed& other) {
+    return this->getRawBits() > other.getRawBits();
+}
+
+bool Fixed::operator!=(const Fixed& other) {
+    return this->getRawBits() > other.getRawBits();
+}
+
+Fixed Fixed::operator+(const Fixed& other) const {
+    return this->getRawBits() > other.getRawBits();
+}
+
+Fixed Fixed::operator-(const Fixed& other) const {
+
+}
+
+Fixed Fixed::operator*(const Fixed& other) const {
+
+}
+
+Fixed Fixed::operator/(const Fixed& other) const {
+
+}
+
+Fixed& Fixed::operator++(void) {
+
+}
+
+Fixed Fixed::operator++(int) {
+
+}
+
+Fixed& Fixed::operator--(void) {
+
+}
+
+Fixed Fixed::operator--(int) {
+
+}

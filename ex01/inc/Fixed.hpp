@@ -11,7 +11,7 @@ class Fixed
         Fixed( const int val);
         Fixed( const float val);
         Fixed( const Fixed& fixed);
-        Fixed& operator=(const Fixed& otherFixed);
+        Fixed& operator=(const Fixed& other);
         // friend std::ostream& operator<<(std::ostream& os, const Fixed& fixed);
         ~Fixed( void );
 
