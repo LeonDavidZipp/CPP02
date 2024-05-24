@@ -12,10 +12,10 @@ bool operator<=(const Fixed& otherFixed);
 bool operator==(const Fixed& otherFixed);
 bool operator!=(const Fixed& otherFixed);
 
-Fixed	operator+(Fixed const &other) const;
-Fixed	operator-(Fixed const &other) const;
-Fixed	operator*(Fixed const &other) const;
-Fixed	operator/(Fixed const &other) const;
+Fixed	operator+(const Fixed& other) const;
+Fixed	operator-(const Fixed& other) const;
+Fixed	operator*(const Fixed& other) const;
+Fixed	operator/(const Fixed& other) const;
 
 Fixed&	operator++(void);
 Fixed	operator++(int);
