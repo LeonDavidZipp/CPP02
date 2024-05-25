@@ -62,23 +62,23 @@ Fixed Fixed::operator/(const Fixed& other) const {
 }
 
 Fixed& Fixed::operator++(void) {
-    this->setRawBits(this->getRawBits() + (1 << this->fractBits));
+    this->setRawBits(this->getRawBits() + 1);
     return *this;
 }
 
 Fixed Fixed::operator++(int) {
     Fixed temp(*this);
-    this->setRawBits(this->getRawBits() + (1 << this->fractBits));
+    this->setRawBits(this->getRawBits() + 1);
     return temp;
 }
 
 Fixed& Fixed::operator--(void) {
-    this->setRawBits(this->getRawBits() - (1 << this->fractBits));
+    this->setRawBits(this->getRawBits() - 1);
     return *this;
 }
 
 Fixed Fixed::operator--(int) {
     Fixed temp(*this);
-    this->setRawBits(this->getRawBits() - (1 << this->fractBits));
+    this->setRawBits(this->getRawBits() - 1);
     return temp;
 }

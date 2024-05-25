@@ -1,10 +1,14 @@
 #include "../inc/Fixed.hpp"
+#include <cstdio>
 
 int main( void ) {
     Fixed a( 99 );
-    Fixed const b( 100 );
+    Fixed b( 100 );
     Fixed const c( 101 );
     Fixed const d( b );
+
+    printf("b is %d\n", b.getRawBits());
+    printf("d is %d\n", d.getRawBits());
 
     std::cout << "a is " << a << std::endl;
     std::cout << "b is " << b << std::endl;
@@ -20,10 +24,10 @@ int main( void ) {
     std::cout << "a < b " << (a < b) << std::endl;
     std::cout << "a >= b " << (a >= b) << std::endl;
     std::cout << "a <= b " << (a <= b) << std::endl;
-    std::cout << "b == d " << (a == b) << std::endl;
+    std::cout << "b == d " << (b == d) << std::endl;
     std::cout << "a == b " << (a == b) << std::endl;
     std::cout << "a != b " << (a != b) << std::endl;
-    std::cout << "a != c " << (a != c) << std::endl;
+    std::cout << "b != d " << (b != d) << std::endl;
 
     std::cout << "a + b " << (a + b) << std::endl;
     std::cout << "a - b " << (a - b) << std::endl;
@@ -48,10 +52,6 @@ int main( void ) {
 
     std::cout << "min(a, b) " << Fixed::min(a, b) << std::endl;
     std::cout << "max(a, b) " << Fixed::max(a, b) << std::endl;
-
-    int r = 42;
-    int s = 42;
-    std::cout << "r == s " << (r == s) << std::endl;
 
     return 0;
 }
