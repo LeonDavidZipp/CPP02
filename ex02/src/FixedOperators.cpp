@@ -14,27 +14,27 @@ Fixed& Fixed::operator=(const Fixed& other) {
 }
 
 bool Fixed::operator>(const Fixed& other) {
-    return (bool)(this->getRawBits() > other.getRawBits());
+    return this->getRawBits() > other.getRawBits();
 }
 
 bool Fixed::operator<(const Fixed& other) {
-    return (bool)(this->getRawBits() < other.getRawBits());
+    return this->getRawBits() < other.getRawBits();
 }
 
 bool Fixed::operator>=(const Fixed& other) {
-    return (bool)(this->getRawBits() >= other.getRawBits());
+    return this->getRawBits() >= other.getRawBits();
 }
 
 bool Fixed::operator<=(const Fixed& other) {
-    return (bool)(this->getRawBits() <= other.getRawBits());
+    return this->getRawBits() <= other.getRawBits();
 }
 
 bool Fixed::operator==(const Fixed& other) {
-    return (bool)(this->getRawBits() == other.getRawBits());
+    return this->getRawBits() == other.getRawBits();
 }
 
 bool Fixed::operator!=(const Fixed& other) {
-    return (bool)(this->getRawBits() != other.getRawBits());
+    return this->getRawBits() != other.getRawBits();
 }
 
 Fixed Fixed::operator+(const Fixed& other) const {
