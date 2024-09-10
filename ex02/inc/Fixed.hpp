@@ -19,17 +19,20 @@ class Fixed
         Fixed operator*(const Fixed& otherFixed);
         Fixed operator/(const Fixed& otherFixed);
 
-        Fixed operator>(const Fixed& otherFixed);
-        Fixed operator<(const Fixed& otherFixed);
-        Fixed operator>=(const Fixed& otherFixed);
-        Fixed operator<=(const Fixed& otherFixed);
-        Fixed operator==(const Fixed& otherFixed);
-        Fixed operator!=(const Fixed& otherFixed);
+        bool operator>(const Fixed& otherFixed);
+        bool operator<(const Fixed& otherFixed);
+        bool operator>=(const Fixed& otherFixed);
+        bool operator<=(const Fixed& otherFixed);
+        bool operator==(const Fixed& otherFixed);
+        bool operator!=(const Fixed& otherFixed);
 
-        Fixed operator++();
-        Fixed operator--();
+        Fixed& operator++();
+        Fixed& operator--();
         Fixed operator++(int);
         Fixed operator--(int);
+
+        static const Fixed& max(const Fixed& a, const Fixed& b);
+        static const Fixed& min(const Fixed& a, const Fixed& b);
 
         int getRawBits() const;
         void setRawBits( int const raw );

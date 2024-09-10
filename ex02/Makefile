@@ -6,11 +6,11 @@
 #    By: lzipp <lzipp@student.42heilbronn.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/03 09:34:57 by lzipp             #+#    #+#              #
-#    Updated: 2024/09/10 08:29:36 by lzipp            ###   ########.fr        #
+#    Updated: 2024/09/10 11:26:36 by lzipp            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME := ex01Test
+NAME := ex02Test
 
 CPP := c++
 CPPFLAGS := -Wextra -Wall -Werror -std=c++11
