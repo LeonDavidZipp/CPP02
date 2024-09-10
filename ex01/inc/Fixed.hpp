@@ -7,19 +7,18 @@
 class Fixed
 {
     public:
-        Fixed( void );
+        Fixed();
         Fixed( const int val);
         Fixed( const float val);
         Fixed( const Fixed& fixed);
         Fixed& operator=(const Fixed& otherFixed);
-        // friend std::ostream& operator<<(std::ostream& os, const Fixed& fixed);
-        ~Fixed( void );
+        ~Fixed();
 
-        int getRawBits( void ) const;
+        int getRawBits() const;
         void setRawBits( int const raw );
 
-        int toInt( void ) const;
-        float toFloat( void ) const;
+        int toInt() const;
+        float toFloat() const;
 
     private:
         int val;
