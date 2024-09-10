@@ -36,3 +36,6 @@ ex00Test
 ex01Test
 ex02Test
 ex03Test
+
+.DS_Store
+.vscode

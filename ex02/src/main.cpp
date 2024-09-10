@@ -52,6 +52,11 @@ int main( void ) {
     std::cout << "e - f: " << e - f << std::endl;
     std::cout << "e * f: " << e * f << std::endl;
     std::cout << "e / f: " << e / f << std::endl;
+    try {
+        std::cout << "edge case: div by zero 1 / 0: " << Fixed(1) / Fixed(0) << std::endl;
+    } catch (std::exception &e) {
+        std::cout << "exception caught: " << e.what() << std::endl;
+    }
     std::cout << std::endl;
 
     std::cout << "comparison -------------------------" << std::endl;
