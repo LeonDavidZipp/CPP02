@@ -31,7 +31,7 @@ int main( void ) {
     std::cout << "f: " << 5.05f * 2 << std::endl;
     Fixed e;
     std::cout << "e: " << e << std::endl;
-    Fixed const f( Fixed( 5.05f ) * Fixed( 2 ) );
+    Fixed f( Fixed( 5.05f ) * Fixed( 2 ) );
     std::cout << "f: " << f << std::endl;
 
     std::cout << "pre increment e: " << ++e << std::endl;
@@ -76,8 +76,14 @@ int main( void ) {
     std::cout << "max and min -------------------------" << std::endl;
     std::cout << "e: " << e << std::endl;
     std::cout << "f: " << f << std::endl;
+    std::cout << "for non const values: " << std::endl;
     std::cout << "max of " << e << " and " << f << ": " << Fixed::max(e, f) << std::endl;
     std::cout << "min of " << e << " and " << f << ": " << Fixed::min(e, f) << std::endl;
+    std::cout << "for const values: " << std::endl;
+    Fixed const y = Fixed(3);
+    Fixed const z = Fixed(4);
+    std::cout << "max of " << y << " and " << z << ": " << Fixed::max(y, z) << std::endl;
+    std::cout << "min of " << y << " and " << z << ": " << Fixed::min(y, z) << std::endl;
 
     return 0;
 }

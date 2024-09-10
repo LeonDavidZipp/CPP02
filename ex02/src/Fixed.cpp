@@ -115,11 +115,11 @@ Fixed Fixed::operator--(int) {
     return temp;
 }
 
-const Fixed& max(Fixed& a, Fixed& b) {
+const Fixed& Fixed::max(Fixed& a, Fixed& b) {
     return (a.getRawBits() > b.getRawBits()) ? a : b;
 }
 
-const Fixed& min(Fixed& a, Fixed& b) {
+const Fixed& Fixed::min(Fixed& a, Fixed& b) {
     return (a.getRawBits() < b.getRawBits()) ? a : b;
 }
 
